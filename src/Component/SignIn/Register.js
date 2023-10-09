@@ -63,7 +63,7 @@ const Register = () => {
   };
 
   const user_role_link = async (uid) => {
-    let result = await fetch("${API.localhost}/add_user_role_link", {
+    let result = await fetch(`${API.localhost}/add_user_role_link`, {
       method: "POST",
       body: JSON.stringify({ uid }),
       headers: {
