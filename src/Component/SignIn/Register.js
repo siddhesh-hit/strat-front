@@ -43,7 +43,7 @@ const Register = () => {
     axios
       .post(`${API.localhost}/register`, { username, email, password })
       .then((res) => {
-        console.log(res);
+        console.log(res, "check");
         if (Array.isArray(res.data)) {
           if (JSON.stringify(res.data["0"]["email"] != "")) {
             swal("Oops!", "Email Already Exists", "error");
