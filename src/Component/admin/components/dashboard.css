@@ -1,0 +1,99 @@
+.dashboardFlex {
+    display: flex;
+    background-color: rgb(242, 242, 242);
+}
+
+.heroDiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sideNavbar {
+    height: 100% !important;
+    position: fixed;
+    z-index: 1;
+}
+
+.icons-right {
+    display: flex;
+    gap: 15px;
+}
+
+.icons-right>i {
+    color: gray;
+}
+
+.buttonCreate{
+    background-color: black;
+    color: white;
+    padding: 0.49rem;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.buttonCreate:hover{
+    background-color: white;
+    color: black;
+}
+
+.rightSide {
+    flex: 1;
+    margin-left: 17rem;
+}
+
+.mainTableDiv {
+    margin: 2rem;
+    border-radius: 10px;
+}
+
+.mainTableDiv > .filter-flex{
+    margin: 1rem 0;
+}
+
+.filter-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.dropdownFilter, #dropdown-basic{
+    background-color: rgb(242, 242, 242);
+    color: black;
+}
+
+.data-table {
+    padding-left: 35px;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    text-align: center;
+}
+
+.data-table .rdt_TableRow {
+    padding: 15px;
+    /* Adjust the value as needed */
+}
+
+select, option {
+    outline: none;
+    border: none;
+}
+
+.chip img {
+    /* float: left; */
+    width: 29px;
+    height: 22px;
+    margin: 0 4px 0 2px;
+    border-radius: 50%;
+}
+
+/* Add this to your CSS */
+.selected-column {
+    display: inline-block;
+    margin-right: 10px;
+    position: relative;
+}
+
+.selected-column > .remove-column {
+    cursor: pointer;
+    color: red;
+    margin-left: 5px;
+}

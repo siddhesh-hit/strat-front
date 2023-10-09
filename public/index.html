@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/image.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link href="assets/plugins/simplebar/css/simplebar.css" rel="stylesheet" />
+    <link
+      href="assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css"
+      rel="stylesheet"
+    />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/bootstrap-extended.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/css/icons.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="font/bootstrap-icons.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Strategytool</title>
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="-1" />
+    <meta http-equiv="imagetoolbar" content="no" />
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  </head>
+
+  <!-- <style>
+  @media print {
+    html,
+    body{
+      display: none;
+      user-select: none;
+    }
+  }
+  .safaribtn {background-color:silver;}
+
+@media screen {
+  html,
+  body{
+   display: block;
+  }  
+}
+
+</style> -->
+
+  <body>
+    <!-- <body oncontextmenu="return false;" onkeydown="return false;" onmousedown="return false;"></body> -->
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+    <!-- <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <!plugins-->
+    <!-- <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/plugins/simplebar/js/simplebar.min.js"></script>
+  <script src="assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js"></script>
+  <script src="assets/js/pace.min.js"></script>
+  <!app-->
+    <!-- <script src="assets/js/app.js"></script>
+  <script src="assets/js/app-emailread.js"></script> -->
+    <!-- -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <div></div>
+    <input id="robotic_input" type="text" style="display: none" />
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("body").bind("cut copy paste select printscreen", function (event) {
+          event.preventDefault();
+        });
+      });
+
+      window.addEventListener("keydown", (e) => {
+        if (e.key === "F12") e.preventDefault();
+      });
+
+      window.addEventListener("contextmenu", (e) => e.preventDefault());
+
+      function clp_clear() {
+        var content = window.clipboardData.getData("Text");
+        if (content == null) {
+          window.clipboardData.clearData();
+        }
+        setTimeout("clp_clear();", 1000);
+      }
+
+      getWindow().setFlags(LayoutParams.FLAG_SECURE, LayoutParams.FLAG_SECURE);
+
+      // ......................................
+
+      getwindow().setFlags(
+        windowManager.LayoutParams.FLAG_SECURE,
+        windowManager.LayoutParams.FLAG_SECURE
+      );
+      function setClipBoardData() {
+        setInterval("window.clipboardData.setData('text','')", 20);
+      }
+      function blockError() {
+        windowManager.location.reload(true);
+        return true;
+      }
+    </script>
+  </body>
+</html>

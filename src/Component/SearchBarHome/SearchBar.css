@@ -1,0 +1,247 @@
+/*! CSS Used from: https://app.peppertype.ai/_next/static/css/5c6b42aefeb9f30f.css */
+.styles_searchContainer__BMCIH {
+  position: relative;
+  border-radius: 25px;
+  transition: border-radius 0.3s ease;
+}
+.styles_searchContainer__BMCIH:before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: var(--blue-50);
+  opacity: 0;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  border-radius: 1px;
+}
+.styles_actionButton__7eSIr {
+  color: var(--gray-4);
+}
+.styles_actionButton__7eSIr:focus {
+  outline: none;
+}
+.styles_actionButton__7eSIr svg {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+.styles_searchContainer__BMCIH input::-moz-placeholder {
+  font-weight: 500;
+  font-size: 12px;
+  color: var(--gray-4);
+}
+.styles_searchContainer__BMCIH input:-ms-input-placeholder {
+  font-weight: 500;
+  font-size: 12px;
+  color: var(--gray-4);
+}
+.styles_searchContainer__BMCIH input::placeholder {
+  font-weight: 500;
+  font-size: 12px;
+  color: var(--gray-4);
+}
+[class*="ant-"] input::-ms-clear,
+[class*="ant-"] input::-ms-reveal,
+[class^="ant-"] input::-ms-clear,
+[class^="ant-"] input::-ms-reveal {
+  display: none;
+}
+[class*="ant-"] *,
+[class*="ant-"] :after,
+[class*="ant-"] :before,
+[class^="ant-"] *,
+[class^="ant-"] :after,
+[class^="ant-"] :before {
+  box-sizing: border-box;
+}
+input::-ms-clear,
+input::-ms-reveal {
+  display: none;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+button,
+input:not([type="range"]) {
+  touch-action: manipulation;
+}
+button,
+input {
+  font-size: inherit;
+}
+button,
+input {
+  overflow: visible;
+}
+button {
+  -webkit-appearance: button;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border-style: none;
+}
+::-moz-selection {
+  color: #fff;
+  background: #1600e5;
+}
+::selection {
+  color: #fff;
+  background: #1600e5;
+}
+.ant-layout * {
+  box-sizing: border-box;
+}
+button,
+input {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+button {
+  text-transform: none;
+}
+button {
+  -webkit-appearance: button;
+}
+button {
+  background-color: transparent;
+  background-image: none;
+}
+*,
+:after,
+:before {
+  box-sizing: border-box;
+  border: 0 solid;
+}
+input::-moz-placeholder {
+  opacity: 1;
+  color: #a1a1aa;
+}
+input:-ms-input-placeholder {
+  opacity: 1;
+  color: #a1a1aa;
+}
+input::placeholder {
+  opacity: 1;
+  color: #a1a1aa;
+}
+button {
+  cursor: pointer;
+}
+button,
+input {
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+}
+svg {
+  display: block;
+  vertical-align: middle;
+}
+*,
+:after,
+:before {
+  border-color: currentColor;
+}
+.tw-flex {
+  display: flex;
+}
+.tw-h-12 {
+  height: 3rem;
+}
+.tw-h-full {
+  height: 100%;
+}
+.tw-w-full {
+  width: 100%;
+}
+.tw-flex-1 {
+  flex: 1 1 0%;
+}
+.tw-items-center {
+  align-items: center;
+}
+.tw-justify-center {
+  justify-content: center;
+}
+.tw-border {
+  border-width: 1px;
+}
+.tw-border-gray-20 {
+  border-color: var(--gray-20);
+}
+.tw-bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+}
+.tw-px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.tw-py-3 {
+  padding-top: 0.6rem;
+  padding-bottom: 0.75rem;
+}
+.tw-pr-5 {
+  padding-right: 1.25rem;
+}
+.tw-text-t-black-50 {
+  color: var(--t-black);
+}
+*,
+:after,
+:before {
+  --tw-shadow: 0 0 #0000;
+}
+.focus\:tw-outline-none:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+*,
+:after,
+:before {
+  --tw-ring-inset: var(--tw-empty);
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgba(59, 130, 246, 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+}
+
+.styles_searchContainer__BMCIH.tw-text-t-black-50.tw-bg-white.tw-border-gray-20.tw-border.\|.tw-flex.tw-items-center.tw-justify-center.\|.tw-pr-5.\|.tw-h-12 {
+  width: 492px;
+  left: 34%;
+  height: 45px;
+  margin-top: 60px;
+  border: 1px solid grey;
+  margin-bottom: 20px;
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .styles_searchContainer__BMCIH.tw-text-t-black-50.tw-bg-white.tw-border-gray-20.tw-border.\|.tw-flex.tw-items-center.tw-justify-center.\|.tw-pr-5.\|.tw-h-12 {
+    width: 90%;
+    height: 45px;
+    margin-top: 30px;
+    left: 0px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .Landing-Page {
+    text-align: center;
+    margin-top: 70px;
+    padding-top: 40px;
+  }
+  input[type=search]:focus {
+    width: 130px;
+    background-color: #fff;
+    border-color: #66CC75;
+    box-shadow: 0 0 5px rgb(109 207 246 / 50%);
+}
+}

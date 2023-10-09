@@ -1,0 +1,358 @@
+.Home_background {
+  background-color: #FBFAF5;
+}
+
+.Landing-Page {
+  text-align: center;
+  margin-top: 70px;
+  padding-top: 80px;
+}
+
+h3.Landing-Page {
+  margin-top: 50px;
+}
+
+.Landing-para {
+  text-align: center;
+  padding-top: 10px;
+  font-size: 17px;
+}
+
+.Wavinghand_space {
+  margin-right: 10px;
+}
+
+.padding-homepage {
+  font-size: 38px;
+}
+
+button.btn-all {
+  margin-top: 50px;
+  border: none;
+  border-radius: 20px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  background-color: white;
+  padding-right: 10px;
+  padding-top: 5px;
+  width: 60px;
+  height: 35px;
+  margin-right: 10px;
+  color: black;
+  border: 1px solid black;
+}
+
+button.btn-all:hover {
+  margin-top: 50px;
+  border: none;
+  border-radius: 20px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  background-color: black;
+  padding-right: 10px;
+  padding-top: 5px;
+  width: 60px;
+  height: 35px;
+  margin-right: 10px;
+  color: #91ccc2;
+  border: 1px solid black;
+}
+
+/* button.btn-all:focus{
+  margin-top: 50px;
+  border: none;
+  border-radius: 20px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  background-color: black;
+  padding-right: 10px;
+  padding-top: 5px;
+  width: 60px;
+  height: 35px;
+  margin-right: 10px;
+  color: #91ccc2;
+  border: 1px solid black;
+} */
+button.socialmedia-btn {
+  margin-right: 10px;
+  border: none;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  border-radius: 20px;
+  border: 1px solid black;
+  color: black;
+  background-color: white;
+}
+
+button.socialmedia-btn:hover {
+  margin-right: 10px;
+  border: none;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  border-radius: 20px;
+  border: 1px solid black;
+  color: #91ccc2;
+  background-color: black;
+}
+
+/* button.socialmedia-btn:focus {
+  margin-right: 10px;
+  border: none;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  border-radius: 20px;
+  border: 1px solid black;
+  color: #91ccc2;
+  background-color: black;
+} */
+.all-channels.container p.homepage_font {
+  font-size: 12px;
+  padding-bottom: 15px;
+
+}
+
+.display-flex {
+  display: flex;
+  margin-top: 50px;
+}
+
+.display {
+  height: 90px;
+  background-color: white !important;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  background: var(--white);
+  box-shadow: 0 2px 8px #5353531f;
+  border-radius: 8px;
+  border: none;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: 25px;
+  width: 33.3333%;
+}
+
+.socialmedia-div.row {
+  margin-top: 60px;
+  flex: 0 0 !important;
+  margin-left: 100px;
+}
+
+.icon {
+  margin-right: 20px;
+  top: 30%;
+}
+
+.homepage_font {
+  font-family: 'Roboto', sans-serif;
+}
+
+.all-channels.container p.homepage_font {
+  font-size: 13px;
+}
+
+.padd {
+  position: relative;
+  top: 10px;
+}
+
+.displayy {
+  height: 90px;
+  background-color: white !important;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  background: var(--white);
+  box-shadow: 0 2px 8px #5353531f;
+  border-radius: 8px;
+  border: none;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: 25px;
+  width: 31.1111%;
+  /* margin-bottom: 50px; */
+}
+
+.iconns {
+  height: 50px;
+}
+
+.gmail {
+  height: 37px;
+}
+
+.qq {
+  height: 51px;
+  margin-left: 6px;
+}
+
+.iconnss {
+  margin-right: 18px;
+}
+
+.wechat {
+  height: 36px;
+}
+
+.tiktok {
+  height: 53px;
+}
+
+@media screen and (max-width: 600px) {
+  .display-flex {
+    display: block !important;
+    margin-top: 20px;
+    margin-left: -80px;
+  }
+
+  .display {
+    margin-right: 20px;
+    margin-left: 82px;
+    background-color: white;
+    width: 80%;
+    margin-bottom: 15px;
+  }
+
+  .displayy {
+    height: 90px;
+    background-color: white !important;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    background: var(--white);
+    box-shadow: 0 2px 8px #5353531f;
+    border-radius: 8px;
+    border: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: 25px;
+    width: 80.111%;
+    margin-bottom: 50px;
+    margin-left: 82px;
+  }
+
+  h6.channel_content_h6 {
+    font-size: 14px;
+  }
+
+  button.socialmedia-btn {
+    margin-top: 10px;
+  }
+
+  a.list-group-item.fontss {
+    margin-left: 53px;
+  }
+
+  .mobile-toggle-icon,
+  .search-toggle-icon,
+  .projects,
+  .notifications,
+  .messages {
+    position: relative;
+    left: 7px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #fff;
+    color: #5E636B;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid rgb(255 255 255 / 0%);
+    box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 8%);
+  }
+
+  .padd {
+    position: relative;
+    top: 10px;
+    left: 12px;
+    padding-right: 10px;
+  }
+
+  .icon {
+    margin-right: 0px !important;
+    top: 30%;
+  }
+
+  .gmail {
+    height: 38px !important;
+  }
+
+  .qq {
+    margin-right: 2px;
+  }
+
+  .YellowPages {
+    /* margin-right: 18px; */
+  }
+
+  .iconnss {
+    margin-right: 0px !important;
+  }
+
+  .wechat {
+    height: 40px;
+  }
+
+  .tiktok {
+    height: 57px;
+  }
+}
+
+
+/* ....................... */
+
+#codsfndkj .contact-us-container .contact_infoss {
+  margin-top: 110px;
+  font-size: 25px;
+  color: #222529;
+  letter-spacing: 0.1px;
+  font-weight: 700;
+  font-family: Poppins,sans-serif;
+}
+#codsfndkj .contact-info .feature-box h3 {
+  margin-bottom: 0.4rem;
+  font-size: 18px;
+  text-transform: none;
+  letter-spacing: 0.1px;
+  color: #222529;
+  font-weight: 700;
+  font-family: Poppins,sans-serif;
+}
+#codsfndkj .feature-box.text-center .fa {
+  font-size: 50px;
+  color: #001D39;
+  margin-bottom: 20px;
+  margin-top: 35px;
+}
+#codsfndkj .contact-info .feature-box h5 {
+  color: #0C0C0C;
+  font-weight: 400;
+  font-size: 15px;
+  margin-bottom: 65px;
+}
+#codsfndkj h2.mt-6.mb-2 {
+  font-size: 25px;
+  color: #222529;
+  letter-spacing: 0.1px;
+  font-weight: 700;
+  font-family: Poppins,sans-serif;
+  margin-left: 10px;
+}
+#codsfndkj .contact-info p {
+  font-size: 16px;
+  color: #777;
+  line-height: 1.5;
+}

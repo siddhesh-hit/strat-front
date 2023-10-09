@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+  }
+  .background_color {
+    min-height: 100vh;
+    display: flex;
+    font-weight: 400;
+    font-family: sans-serif;
+    background: #12C2E9;  
+    background: -webkit-linear-gradient(to right, #F64F59, #C471ED, #12C2E9);  
+    background: linear-gradient(to right, #F64F59, #C471ED, #12C2E9);
+  }
+  body, html, .App, #root, .outer {
+    width: 100%;
+    height: 100%;
+  }
+  .navbar-light {
+    background-color: #FFFFFF;
+    box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+  }
+  .outer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+  }
+  .inner {
+    width: 450px;
+    margin: auto;
+    background: #FFFFFF;
+    box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+    padding: 40px 55px 45px 55px;
+    border-radius: 15px;
+    transition: all .3s;
+    margin-top: 6.5%;
+  }
+  .outer .form-control:focus {
+    border-color: #167BFF;
+    box-shadow: none;
+  }
+  .outer h3 {
+    text-align: center;
+    margin: 0;
+    line-height: 1;
+    padding-bottom: 20px;
+  }
+  .custom-control-label {
+    font-weight: 400;
+  }
+  .forgot-password,
+  .forgot-password a {
+    text-align: right;
+    font-size: 13px;
+    padding-top: 10px;
+    color: #7F7D7D;
+    margin: 0px;
+    margin-left: 70px;
+  }
+  .forgot-password a {
+    color: #167BFF;
+  }
+  .sign-up,
+  .sign-up a{
+    text-align: right;
+    font-size: 13px;
+    padding-top: 10px;
+    color: #7F7D7D;
+    margin: 0;
+  }
+  .sign-up a {
+    color: #167BFF;
+  }
+.sign_up_left {
+    color: #167BFF;
+    cursor: pointer;
+  }
+  button.btn.btn-dark.btn-lg.btn-block {
+    width: 100%;
+    margin-top: 12px;
+    margin-bottom: 20px;
+}
+.form-group {
+    padding: 10px;
+    box-sizing: border-box;
+}
+.robotic-font{
+    font-family: 'Roboto', sans-serif;
+}
+.sign_up{
+  color: #167BFF!important;
+  cursor: pointer;
+  margin-right: 80px;
+
+}
+.forgot_password{
+  color: #167BFF;
+  cursor: pointer;
+
+}
+.register_page{
+  color: #167BFF;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .inner {
+    width: 360px;
+    margin: auto;
+    background: #FFFFFF;
+    box-shadow: 0px 14px 80px rgb(34 35 58 / 20%);
+    padding: 20px 35px 20px 35px;
+    border-radius: 15px;
+    transition: all .3s;
+    margin-top: 40%;
+}
+.forgot-password, .forgot-password a {
+  text-align: right;
+  font-size: 13px;
+  padding-top: 10px;
+  color: #7F7D7D;
+  margin: 0px;
+  margin-left: 25px;
+}
+}
+
+.lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  left: 45%;
+  top: 45%;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  border-color: #41C4B7 black;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+.abcsss {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  background: white;
+  height: 100vh;
+}
+
+.robotic_captcha {
+  margin-left: 20px;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+button.google_buttons {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}

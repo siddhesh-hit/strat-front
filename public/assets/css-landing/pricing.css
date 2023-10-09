@@ -1,0 +1,198 @@
+.popup-discount {
+  position: fixed;
+  right:0;
+  bottom:32px;
+  width:45%;
+  z-index:9999;
+  font-size: 18px;
+  color: black;
+  font-family: Gotham-Book;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+}
+.popup-discount .bold {
+  font-family: Gotham-Bold;
+}
+.popup-discount p {
+  margin: 0;
+}
+.popup-discount a.button {
+  background: #b0f95a;
+  color: #000000;
+  border-radius: 2.4rem;
+  border: none;
+  box-shadow: 0 8px 14px rgba(0,0,0,.1);
+  font-weight: 400;
+  margin: 1.4rem 0 1.5rem;
+  padding: 0.3rem 2rem;
+  font-family: Gotham-Bold;
+  font-size: 1.25rem;
+  padding-top: 1.5625rem;
+  padding-bottom: 1.5625rem;
+  letter-spacing: 2px;
+  position: relative;
+  text-transform: uppercase;
+  top: -2px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.3;
+}
+.popup-discount a.button:hover {
+  background: #233212;
+  color: #b0f95a;
+}
+.popup-discount .btn-arrow {
+  background: black;
+  width:49px;
+  margin-left: -49px;
+  height:61px;
+  cursor: pointer;
+  position: absolute;
+}
+.popup-discount i {
+  border: solid white;
+  border-width: 0 6px 6px 0;
+  display: inline-block;
+  padding: 8px;
+  margin-top: 20px;
+}
+.popup-discount i.arrow-right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  margin-left: 10px;
+}
+.popup-discount i.arrow-left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  margin-left: 18px;
+}
+.popup-discount .popup-content {
+  border: solid 3px black;
+  background: white;
+}
+.popup-discount .popup-header {
+  position: relative;
+}
+.popup-discount .discount-75 {
+  margin-left: 20px;
+  width: 35%;
+  display: block;
+}
+.popup-discount .discount-75-m {
+  width: 40%;
+  display: none;
+}
+.popup-discount .popup-header .message-important {
+  position: absolute;
+  background-image: url('../images/popup-discount-message-back.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 65%;
+  right: 20px;
+  bottom: 0px;
+  padding-left: 14%;
+  padding-right: 4%;
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+
+.popup-discount .popup-header .message-important .title {
+  font-size: 24px;
+  padding: 12px 0;
+}
+
+.popup-discount .popup-body {
+  padding: 20px;
+}
+
+.popup-discount .popup-footer {
+  background-image: url('../images/popup-discount-footer.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.popup-discount.close {
+  transform: translate(97%,0);
+}
+.popup-discount.open {
+  transform: translate(0%,0);
+}
+.popup-discount.show {
+  visibility: visible;
+}
+.popup-discount.hide {
+  visibility: hidden;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .popup-discount {
+    width:85%;
+    top: 120px;
+  }
+  .popup-discount .popup-header .message-important {
+    background-image: url('../images/popup-discount-message-back2.png');
+    position: relative;
+    margin-top: -80px;
+    width: 100%;
+    left: 0px;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 8%;
+    padding-bottom: 18%;
+  }
+
+  .popup-discount .discount-75 {
+    margin-left: 20px;
+    width: 35%;
+    display: none;
+  }
+  .popup-discount .discount-75-m {
+    float: right;
+    width: 40%;
+    display: block;
+  }
+  .popup-discount .popup-header .message-important .title {
+    font-size: 18px;
+    padding: 8px 0;
+  }
+  .popup-discount a.button {
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
+  .popup-discount .popup-body {
+    margin-top: -30px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .popup-discount {
+    width:80%;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+  .popup-discount {
+    width:70%;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+  .popup-discount {
+    width:60%;
+  }
+  .popup-discount .popup-header .message-important .title {
+    font-size: 24px;
+    padding: 12px 0;
+  }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+  .popup-discount {
+    width:45%;
+  }
+}
