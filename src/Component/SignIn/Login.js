@@ -84,17 +84,18 @@ const Login = ({ setAuthToken }) => {
       });
       const admin = response.data.results.user.admin;
       console.log(admin, "ye hai mera admin");
-      if (admin == 1) {
-        localStorage.setItem("admin-token", admin);
-        navigate(`/Dashboard`); // Use the proper route name here
-      } else {
-        const userdata = response.data.results;
-        const userid = userdata.user.id;
-        localStorage.setItem("token", userdata.jwt);
-        localStorage.setItem("user_id", userdata.user.id);
-        setAuthToken(userdata.jwt);
-        check_subscription(userid, userdata.jwt);
-      }
+      // if (admin == 1) {
+      //   localStorage.setItem("admin-token", admin);
+      //   navigate(`/Dashboard`); // Use the proper route name here
+      // } else {
+      const userdata = response.data.results;
+      const userid = userdata.user.id;
+      localStorage.setItem("token", userdata.jwt);
+      localStorage.setItem("user_id", userdata.user.id);
+      setAuthToken(userdata.jwt);
+      check_subscription(userid, userdata.jwt);
+      console.log("yehan aya");
+      // }
     } catch (error) {
       setIsLoading(false);
       setIsError(true);
@@ -102,31 +103,73 @@ const Login = ({ setAuthToken }) => {
     }
   };
 
-  const check_subscription = async (userid, token) => {
-    let result = await fetch(`${API.localhost}/subscriptiondt`, {
-      method: "POST",
-      body: JSON.stringify({ userid }),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
+  // const check_subscription = async (userid, token) => {
+  //   await fetch(`${API.localhost}/subscriptiondt`, {
+  //     method: "POST",
+  //     body: JSON.stringify({ userid: userid }),
+  //     headers: {
+  //       "Content-Type": "application/json",
+  //     },
+  //   })
+  //     .then((res) => res.json())
+  //     .then((data) => {
+  //       console.log(data, "data channel");
+  //       if (data != "" || data.length != 0) {
+  //         const platform_ids = data[0]["platforms"];
+  //         localStorage.setItem("subscribe_platform_id", platform_ids);
+  //         swal({
+  //           title: "Wow!",
+  //           text: "Login Successfully",
+  //           type: "success",
+  //         }).then(function () {
+  //           localStorage.setItem("token", token);
+  //           sessionStorage.clear();
+  //           navigate("/Homepage");
+  //           // window.location.href = "#/Homepage";
+  //         });
+  //       } else {
+  //         navigate("/Pricing");
+  //       }
+  //     });
+  // };
 
-    const data = await result.json();
-    if (data != "") {
-      const platform_ids = data[0]["platforms"];
-      localStorage.setItem("subscribe_platform_id", platform_ids);
-      swal({
-        title: "Wow!",
-        text: "Login Successfully",
-        type: "success",
-      }).then(function () {
-        localStorage.setItem("token", token);
-        sessionStorage.clear();
-        navigate("/Homepage");
-        window.location.href = "#/Homepage";
+  const check_subscription = async (userid, token) => {
+    try {
+      const response = await fetch(`${API.localhost}/subscriptiondt`, {
+        method: "POST",
+        body: JSON.stringify({ userid: userid }),
+        headers: {
+          "Content-Type": "application/json",
+        },
       });
-    } else {
-      navigate("/Pricing");
+
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
+
+      const data = await response.json();
+      console.log("Subscription data:", data);
+
+      if (data !== null && data.length !== 0 && data !== "") {
+        const platform_ids = data[0]["platforms"];
+        localStorage.setItem("subscribe_platform_id", platform_ids);
+        swal({
+          title: "Wow!",
+          text: "Login Successfully",
+          type: "success",
+        }).then(function () {
+          localStorage.setItem("token", token);
+          sessionStorage.clear();
+          navigate("/Homepage");
+        });
+      } else {
+        navigate("/Pricing");
+      }
+    } catch (error) {
+      console.error("Error fetching subscription data:", error);
+      setIsLoading(false);
+      setIsError(true);
+      setTimeout(() => setIsError(false), 4000);
     }
   };
 
