@@ -38,7 +38,7 @@ const Medium = ({ channels, setChannels }) => {
         const response = await axios.get(
           `https://admin.strategytool.io/api/mediums?filters[channel][text]=${channel}&populate=icon`
         );
-        // console.log(response, "ye hai bahi");
+        console.log(response, "ye hai bahi");
         if (isMounted) {
           setMediums(response.data.data);
           getchid(response.data.data);
